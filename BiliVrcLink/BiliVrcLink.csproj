@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>BiliVrcLink</AssemblyName>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+    <DebugType>embedded</DebugType>
+    <ApplicationIcon>assets\app.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\tools\ffmpeg.exe.br" LogicalName="BiliVrcLink.ffmpeg.br" />
+    <EmbeddedResource Include="..\tools\FFmpeg-LICENSE.txt" LogicalName="BiliVrcLink.FFmpeg-LICENSE.txt" />
+    <EmbeddedResource Include="..\tools\FFmpeg-README.txt" LogicalName="BiliVrcLink.FFmpeg-README.txt" />
+    <EmbeddedResource Include="..\tools\FFmpeg-NOTICE.md" LogicalName="BiliVrcLink.FFmpeg-NOTICE.md" />
+  </ItemGroup>
+</Project>
